@@ -1,0 +1,14 @@
+In this assignment I utilized dynamic arrays in order to conduct DIP operations on variable images. 
+
+malloc and free are used to allocate and deallocate memory respectively when I needed to create a temporary "image" with RGB channels of their own.
+
+GetPixel is used to obtain RGB values from the original image and setpixel is used in order to set new RGB values to the original image.
+
+Conversely from hw3 whenever temp arrays were used, this time I had to create temporary images in memeory and used pointers and arithmetic in order to obtain the appropriate values. 
+
+Brightness and contrast function required simple arithmetic.
+
+Crop function required assigning and reassigning.
+
+
+

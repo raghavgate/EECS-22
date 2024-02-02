@@ -1,0 +1,134 @@
+Script started on Mon 13 Feb 2023 04:55:27 PM PST
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ make clean
+rm -f *.o 
+rm -f PhotoLab 
+rm -f PhotoLabTest
+rm -f negative.ppm 
+rm -f colorfilter.ppm
+rm -f edge.ppm
+rm -f hmirror.ppm
+rm -f bw.ppm
+rm -f shuffle.ppm
+rm -f border.ppm
+rm -f hflip.ppm
+rm -f normalize.ppm
+rm -f posterize.ppm
+rm -f rotate.ppm
+rm -f libFilter.a 
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ make
+gcc PhotoLab.c -Wall -std=c11 -c -o PhotoLab.o
+gcc FileIO.c -Wall -std=c11 -c -o FileIO.o
+gcc DIPs.c -Wall -std=c11 -c -o DIPs.o
+gcc Advanced.c -Wall -std=c11 -c -o Advanced.o -lm
+ar rc libFilter.a DIPs.o Advanced.o
+ranlib libFilter.a
+gcc PhotoLab.o DIPs.o FileIO.o Advanced.o -Wall -std=c11 -L. -lm -o PhotoLab
+gcc PhotoLab.c -Wall -std=c11 -DDEBUG -c -o PhotoLabTest.o 
+gcc PhotoLabTest.o FileIO.o DIPs.o Advanced.o -Wall -std=c11 -g -L. -lm -o PhotoLabTest  -DDEBUG 
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ ./PhotoLab
+
+----------------------------
+ 1: Load a PPM image
+ 2: Save an image in PPM and JPEG format
+ 3: Change a color image to Black & White
+ 4: Make a negative of an image
+ 5: Color filter an image
+ 6: Sketch the edge of an image
+ 7: Shuffle an image
+ 8: Flip an image horizontally
+ 9: Mirror an image horizontally
+10: Add border to an image
+11: Normalize an image
+12: Posterize an image
+13: Rotate and zoom an image
+14: Motion Blur
+15: Test all Functions
+16: Exit
+Please make your choice: 15
+Engineering.ppm was read.
+negative.ppm was saved. 
+negative.jpg was stored.
+Negative tested!
+
+Engineering.ppm was read.
+colorfilter.ppm was saved. 
+colorfilter.jpg was stored.
+Color Filter tested!
+
+Engineering.ppm was read.
+edge.ppm was saved. 
+edge.jpg was stored.
+Edge Detection tested!
+
+Engineering.ppm was read.
+hmirror.ppm was saved. 
+hmirror.jpg was stored.
+HMirror tested!
+
+Engineering.ppm was read.
+border.ppm was saved. 
+border.jpg was stored.
+Border tested!
+
+Engineering.ppm was read.
+bw.ppm was saved. 
+bw.jpg was stored.
+Black & White tested!
+
+Engineering.ppm was read.
+hflip.ppm was saved. 
+hflip.jpg was stored.
+HFlip tested!
+
+Engineering.ppm was read.
+shuffle.ppm was saved. 
+shuffle.jpg was stored.
+Shuffle tested!
+
+Engineering.ppm was read.
+normalize.ppm was saved. 
+normalize.jpg was stored.
+Normalize tested!
+
+Engineering.ppm was read.
+posterize.ppm was saved. 
+posterize.jpg was stored.
+Posterize tested!
+
+Engineering.ppm was read.
+rotate.ppm was saved. 
+rotate.jpg was stored.
+Rotate tested!
+
+
+----------------------------
+ 1: Load a PPM image
+ 2: Save an image in PPM and JPEG format
+ 3: Change a color image to Black & White
+ 4: Make a negative of an image
+ 5: Color filter an image
+ 6: Sketch the edge of an image
+ 7: Shuffle an image
+ 8: Flip an image horizontally
+ 9: Mirror an image horizontally
+10: Add border to an image
+11: Normalize an image
+12: Posterize an image
+13: Rotate and zoom an image
+14: Motion Blur
+15: Test all Functions
+16: Exit
+Please make your choice: 16
+You exit the program.
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ make PhotoLabTest
+make: `PhotoLabTest' is up to date.
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ touch Advca[K[Kanced.c
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ make p[KPhotoLab
+gcc Advanced.c -Wall -std=c11 -c -o Advanced.o -lm
+ar rc libFilter.a DIPs.o Advanced.o
+ranlib libFilter.a
+gcc PhotoLab.o DIPs.o FileIO.o Advanced.o -Wall -std=c11 -L. -lm -o PhotoLab
+]0;rgate@bondi:~/hw3[rgate@bondi ~/hw3]$ exit
+exit
+
+Script done on Mon 13 Feb 2023 04:57:11 PM PST

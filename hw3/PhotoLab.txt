@@ -1,0 +1,46 @@
+PHOTOLAB V2
+
+
+normalize:
+A for loop goes through the image to find the current maximum and minimum RGB intensities.
+Followed by this is straightforward application of the formula provided and applied to each individual channel and pixel
+
+posterize:
+in this function a bitmask is used made by bitshifting 1 by user input - 1. This subtracted by 1 is stored into a new variable. The unary complement of the bitmask is also stored as another variable
+the bitshifted number is anded with its unary complement which is further ORed with it the bitshift - 1 number in order to obtain the value for posterizing the image.
+This gets applied to each respective channel
+
+Rotate:
+temp arrays are used to store the original intensities of every channel. 
+A for loop traverses the array while performing the calculation to find the new coordinates of the pixel and these intensities are then assigned to the temp arrays
+An if statement is used in order to assign 0 values to any pixels that lie out of bounds.
+the original channels get assigned the temp array intensities but with the new coordinates.
+
+
+Advanced.c 
+Contains the function definitions for normalize posterize and rotate
+		
+Advanced.h
+the header file for advanced.c
+contains the function declarations for normalize, posterize and rotate.
+
+DIPS.c
+contains the function definitions for the functions from PhotoLab 1
+
+DIPS.h
+the header file for DIPs.c
+contains the function declarations for the DIP functions from PhotoLab1
+
+FileIO.c
+contains the function definitions for loadimage and saveimage
+
+FileIO.h
+header fille for FileIO.c 
+contains the function declarations for loadimage and saveimage
+
+Makefile
+all: runs PhotoLabtest
+clean: removes previous images (that have had DIP operations run on them) from the directory and 'cleans' it up
+PhotoLabtest: rus PhotoLab file in debug mode
+after that  we have output files that connect all the decomposed code together
+
