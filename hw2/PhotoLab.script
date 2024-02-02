@@ -1,6 +1,8 @@
 Script started on Wed 01 Feb 2023 11:02:58 AM PST
-]0;rgate@bondi:~/hw2[rgate@bondi ~/hw2]$ ~eecs22/bin/turnin.sh[22Gcd ..[K[22Gls[Kmv typescript PhotoLab.script[22Gexit[K./PhotoLab[22G[31@gcc PhotoLab.c -std=c11 -Wall -o [63G[22G[31P./[32G[22Gexit[K./PhotoLab[22G[31@gcc PhotoLab.c -std=c11 -Wall -o [63G
-]0;rgate@bondi:~/hw2[rgate@bondi ~/hw2]$ gcc PhotoLab.c -std=c11 -Wall -o PhotoLab[22G~eecs22/bin/turnin.sh[K[22Gcd ..[K[22Gls[Kmv typescript PhotoLab.script[22Gexit[K./PhotoLab
+]0;rgate@bondi:~/hw2[rgate@bondi ~/hw2]$ ~eecs22/bin/turnin.sh[22Gcd ..[K[22Gls[Kmv typescript PhotoLab.script[22Gexit[K./PhotoLab[22G[31@gcc PhotoLab.c -std=c11 -Wall -o [63G[22G[31P./[32G[22Gexit[K./PhotoLab[22G[31@gcc PhotoLab.c -std=c11 -Wall -o [63G
+
+]0;rgate@bondi:~/hw2[rgate@bondi ~/hw2]$ gcc PhotoLab.c -std=c11 -Wall -o PhotoLab[22G~eecs22/bin/turnin.sh[K[22Gcd ..[K[22Gls[Kmv typescript PhotoLab.script[22Gexit[K./PhotoLab
+
 
 ----------------------------------------------------
 1: Load a PPM image
@@ -86,7 +88,8 @@ Shuffle tested!
 12: Exit
 please make your choice: 12
 exiting program
-]0;rgate@bondi:~/hw2[rgate@bondi ~/hw2]$ exit
+]0;rgate@bondi:~/hw2[rgate@bondi ~/hw2]$ exit
+
 exit
 
 Script done on Wed 01 Feb 2023 11:03:28 AM PST
