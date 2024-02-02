@@ -1,0 +1,31 @@
+Raghav Gate 
+ID: 45478704
+EECS 22 Winter 2023/24
+
+To begin, I constructed the make file.
+Before getting too far into coding functions, my objective was to get the movie playing as quickly as possible so that I could verify that the functions were delivering the expected results.
+As a result, I had to complete the fundamentals, such as CreateImageList, DeleteImageList, AppendRGBImage, AppendYUVImage, CreateImageEntry, RGB2YUVMovie, YUV2RGBMovie, and so on. After that, I worked on receiving commands.
+I assisted with this by utilizing the lecture slides, the pdf, and the code that was provided.
+I was able to get the movie to play after finishing the fundamentals.
+I then began working on the fundamental DIPs functions.
+
+Fast Forward and crop both revolved around deleting image entries.
+	I made a new function DeleteImageEntry which I also utilized in the DeleteImage function to delete any image entry in the list. in addition to ensuring that the connections between the nodes adjacent to that one are correct.
+It was much simpler to resolve these two issues after adjusting the delete.
+	
+
+Reverse:
+	I simply traversed the linked list in reverse and flipped the previous and next pointers as well as the first and last pointers.
+
+
+Spotlight:
+	For Spotlight I made a DIP function and implemented it inside the main function of MovieLab using loops.
+
+All the image list functions utilize pointers and making space in memory and consequently freeing that space when not needed in order to avoid memeory leaks.
+	I also made 2 new functions called CreateImageentry and CreateYUVentry which essentially create an entry specifically for RGBimages and YUVImages respwctively.
+	This was useful for when I had to append images into their respective lists.
+
+
+Makefile:
+	 I succeeded in implementing the makefile according to the targets. In order to increase efficiency i used variables so that I would not need to type
+	all the command lines over and over again.
