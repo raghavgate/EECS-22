@@ -1,0 +1,25 @@
+The program I have written is desgined to operate 11 different digital image processing operations.
+
+My main function calls all 11 functions as well as providing a user interactive menu. I further decided to recursively call my main function inside an else statement instead of having a while loop with a temp variable.
+
+My first operation was black and white which required straight forward mathenmatics involving averaging the RGB intensities at every pixel in the image.
+
+The second operation is making the negative of an image which is essentially just the inverse of all the RGB intensities at every pixel in the image obtained by adding -255 to the respective intensities.
+
+The third operation was Color Filtering in which I used loops in order to traverse the 2d pixel array and find values in a certain range and replace them using if and else statements. More of and else statements were
+	 used in order to control the upper and lower limits of the that can be targeted.
+
+The fourth operation was edge detection which required straightforward mathematics and temp variables in order to assigne and store RGB values.
+
+The fifth operation was shuffle in which I take the RGB values of 2 random pixel blocks and swap them. This block of code is embedded in a for loop that runs enough times to the point where every pixel block has ended up	
+	in a new location than their original.
+
+The sixth operation was hflip which uses temporary variables to store the RGB values of the right side of the image and assign them to the left side.
+
+The seventh operation was hmirror which mirrors the left side of the image and pastes it on the right side. Again I used temporary variables in order to store the RGB intensities and assign them later.
+
+The eigth opperation was adding borders. Unfortunately, I did not have enough time to implement this function.
+
+The other three operations were provided by the assignment.
+
+ 
